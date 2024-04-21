@@ -1,9 +1,8 @@
-﻿string name = "Илья";
-foreach (var character in name)
+﻿class MainClass
 {
-    Console.Write(character + " ");
-    if (character == name.Last()) 
+    public static void Main(string[] args)
     {
-        Console.WriteLine($"Последняя буква вашего имени: {character}");
+        int[,] array = { { 1, 2, 3 }, { 5, 6, 7 } };
+        Console.WriteLine(array.Length);
     }
 }
