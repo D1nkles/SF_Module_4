@@ -1,10 +1,15 @@
-﻿(string name, int age) anketa;
-Console.Write("Введите свое имя: ");
-anketa.name = Console.ReadLine();
-Console.Write("Введите ваш возраст: ");
-anketa.age = int.Parse(Console.ReadLine());
+﻿var (name, age) = ("Евгения", 27);
+Console.WriteLine("Ваше имя: {0}", name);
+Console.WriteLine("Ваш возраст: {0}", age);
 
 Console.WriteLine("==============================================");
 
-Console.WriteLine($"Ваше имя: {anketa.name}");
-Console.WriteLine($"Ваш возраст: {anketa.age}");
+Console.Write("Введите свое имя: ");
+name = Console.ReadLine();
+Console.Write("Введите ваш возраст: ");
+age = int.Parse(Console.ReadLine());
+
+Console.WriteLine("==============================================");
+
+Console.WriteLine($"Ваше имя: {name}");
+Console.WriteLine($"Ваш возраст: {age}");
