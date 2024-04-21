@@ -1,5 +1,9 @@
-﻿for (int i = 0; i < 3; i++)
+﻿string name = "Илья";
+foreach (var character in name)
 {
-    Console.WriteLine(i);
-    
-};
+    Console.Write(character + " ");
+    if (character == name.Last()) 
+    {
+        Console.WriteLine($"Последняя буква вашего имени: {character}");
+    }
+}
